@@ -1,0 +1,226 @@
+johndriscoll@johns-air ~ % sqlite3
+SQLite version 3.32.3 2020-06-18 14:16:19
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .quit
+johndriscoll@johns-air ~ % mysql
+zsh: command not found: mysql
+johndriscoll@johns-air ~ % ?
+zsh: no matches found: ?
+johndriscoll@johns-air ~ % help
+zsh: command not found: help
+johndriscoll@johns-air ~ % ls
+Applications	DSC30		Downloads	Movies		Public
+Books		Desktop		LaTeX		Music		SQL
+DSC20		Documents	Library		Pictures	VS Code
+johndriscoll@johns-air ~ % cd SQL
+johndriscoll@johns-air SQL % mysql test
+zsh: command not found: mysql
+johndriscoll@johns-air SQL % sqlite3 test
+SQLite version 3.32.3 2020-06-18 14:16:19
+Enter ".help" for usage hints.
+sqlite> create table Company
+   ...> (cname varchar(20) primary key,
+   ...> countyr varchat(20),
+   ...> no_employees int,
+   ...> for_profit char(1));
+sqlite> select *
+   ...> from Company
+   ...> ;
+sqlite> select * from company;
+sqlite> insert into Company values ('Gizmoworks', 'USA', 20000, 'y');
+sqlite> insert into Company values ('Canon', 'Japan', 50000, 'y');
+sqlite> insert into Company values ('Mitachi', 'Japan', 30000, 'y');
+sqlite> insert into Company values ('Charity', 'Canada', 500, 'n');
+sqlite> select * from company;
+Gizmoworks|USA|20000|y
+Canon|Japan|50000|y
+Mitachi|Japan|30000|y
+Charity|Canada|500|n
+sqlite> .header on
+sqlite> .mode column
+sqlite> select * from company;
+cname       countyr     no_employees  for_profit
+----------  ----------  ------------  ----------
+Gizmoworks  USA         20000         y         
+Canon       Japan       50000         y         
+Mitachi     Japan       30000         y         
+Charity     Canada      500           n         
+sqlite> ALTER TABLE company RENAME COLUMN countyr TO country
+   ...> ;
+sqlite> ALTER TABLE company RENAME COLUMN countyr TO country
+   ...> ;
+Error: no such column: "countyr"
+sqlite> select * from company;
+cname       country     no_employees  for_profit
+----------  ----------  ------------  ----------
+Gizmoworks  USA         20000         y         
+Canon       Japan       50000         y         
+Mitachi     Japan       30000         y         
+Charity     Canada      500           n         
+sqlite> SELECT * FROM company WHERE for_profit = 'n'
+   ...> ;
+cname       country     no_employees  for_profit
+----------  ----------  ------------  ----------
+Charity     Canada      500           n         
+sqlite> SELECT SUM(no_employees) FROM company;
+SUM(no_employees)
+-----------------
+100500           
+sqlite> SELECT SUM(no_employees) AS total_employees  FROM company;
+total_employees
+---------------
+100500         
+sqlite> insert into company values('MovileWorks', 'China', null, null);
+sqlite> select * FROM company
+   ...> ;
+cname       country     no_employees  for_profit
+----------  ----------  ------------  ----------
+Gizmoworks  USA         20000         y         
+Canon       Japan       50000         y         
+Mitachi     Japan       30000         y         
+Charity     Canada      500           n         
+MovileWork  China                               
+sqlite> .nullvalue NULL
+sqlite> select * FROM company
+   ...> ;
+cname       country     no_employees  for_profit
+----------  ----------  ------------  ----------
+Gizmoworks  USA         20000         y         
+Canon       Japan       50000         y         
+Mitachi     Japan       30000         y         
+Charity     Canada      500           n         
+MovileWork  China       NULL          NULL      
+sqlite> delete from company where cname = 'Mitachi';
+sqlite> select * FROM company;
+cname       country     no_employees  for_profit
+----------  ----------  ------------  ----------
+Gizmoworks  USA         20000         y         
+Canon       Japan       50000         y         
+Charity     Canada      500           n         
+MovileWork  China       NULL          NULL      
+sqlite> insert into company values('Canon", null, null, null);
+   ...> ', null, null, null);
+sqlite> delete from company where cname like 'Canon"%';
+sqlite> select * from cname;
+Error: no such table: cname
+sqlite> select * from company;
+cname       country     no_employees  for_profit
+----------  ----------  ------------  ----------
+Gizmoworks  USA         20000         y         
+Canon       Japan       50000         y         
+Charity     Canada      500           n         
+MovileWork  China       NULL          NULL      
+sqlite> ALTER TABLE ADD ceo varchar(20);
+Error: near "ADD": syntax error
+sqlite> ALTER TABLE company  ADD ceo varchar(20);
+sqlite> select * from company;
+cname       country     no_employees  for_profit  ceo       
+----------  ----------  ------------  ----------  ----------
+Gizmoworks  USA         20000         y           NULL      
+Canon       Japan       50000         y           NULL      
+Charity     Canada      500           n           NULL      
+MovileWork  China       NULL          NULL        NULL      
+sqlite> UPDATE Company SET ceo='Brown' WHERE cname = 'Canon';
+sqlite> select * from company;
+cname       country     no_employees  for_profit  ceo       
+----------  ----------  ------------  ----------  ----------
+Gizmoworks  USA         20000         y           NULL      
+Canon       Japan       50000         y           Brown     
+Charity     Canada      500           n           NULL      
+MovileWork  China       NULL          NULL        NULL      
+sqlite> create table Product
+   ...> (pname varchar(20) primary key,
+   ...> price float,
+   ...> category varchar(20),
+   ...> manufacturer varchar(20) references Company);
+sqlite> insert into Product values('Gizmo', 19.99, 'gadget', 'GizmoWorks');
+sqlite> insert into Product values('PowerGizmo, 29.99, 'gadget', 'GizmoWorks');
+   ...> ');
+Error: near "gadget": syntax error
+sqlite> insert into Product values('PowerGizmo', 29.99, 'gadget', 'GizmoWorks'); 
+sqlite> insert into Product values('SingleTouch', 149.99, 'photography', 'Canon');
+sqlite> insert into Product values('MultiTouch', 199.99, 'photography', 'MobileWorks');
+sqlite> insert into Product values('SuperGizmo', 49.99, 'gadget', 'MobileWorks');
+sqlite> select * from product
+   ...> ;
+pname       price       category    manufacturer
+----------  ----------  ----------  ------------
+Gizmo       19.99       gadget      GizmoWorks  
+PowerGizmo  29.99       gadget      GizmoWorks  
+SingleTouc  149.99      photograph  Canon       
+MultiTouch  199.99      photograph  MobileWorks 
+SuperGizmo  49.99       gadget      MobileWorks 
+sqlite> PRAGMA foriegn_keys=ON;
+sqlite> select * from product
+   ...> ;
+pname       price       category    manufacturer
+----------  ----------  ----------  ------------
+Gizmo       19.99       gadget      GizmoWorks  
+PowerGizmo  29.99       gadget      GizmoWorks  
+SingleTouc  149.99      photograph  Canon       
+MultiTouch  199.99      photograph  MobileWorks 
+SuperGizmo  49.99       gadget      MobileWorks 
+sqlite> insert into Product values('Hoverboard
+   ...> ', 299.99, 'entertainment', 'NewCompany');
+sqlite> select * from product;
+pname       price       category    manufacturer
+----------  ----------  ----------  ------------
+Gizmo       19.99       gadget      GizmoWorks  
+PowerGizmo  29.99       gadget      GizmoWorks  
+SingleTouc  149.99      photograph  Canon       
+MultiTouch  199.99      photograph  MobileWorks 
+SuperGizmo  49.99       gadget      MobileWorks 
+Hoverboard  299.99      entertainm  NewCompany  
+sqlite> select * from product join company on company.cname = product.manufacturer;
+pname        price       category     manufacturer  cname       country     no_employees  for_profit  ceo       
+-----------  ----------  -----------  ------------  ----------  ----------  ------------  ----------  ----------
+SingleTouch  149.99      photography  Canon         Canon       Japan       50000         y           Brown     
+sqlite> select * from product left join company on company.cname = product.manufacturer;
+pname       price       category    manufacturer  cname       country     no_employees  for_profit  ceo       
+----------  ----------  ----------  ------------  ----------  ----------  ------------  ----------  ----------
+Gizmo       19.99       gadget      GizmoWorks    NULL        NULL        NULL          NULL        NULL      
+PowerGizmo  29.99       gadget      GizmoWorks    NULL        NULL        NULL          NULL        NULL      
+SingleTouc  149.99      photograph  Canon         Canon       Japan       50000         y           Brown     
+MultiTouch  199.99      photograph  MobileWorks   NULL        NULL        NULL          NULL        NULL      
+SuperGizmo  49.99       gadget      MobileWorks   NULL        NULL        NULL          NULL        NULL      
+Hoverboard  299.99      entertainm  NewCompany    NULL        NULL        NULL          NULL        NULL      
+sqlite> UPDATE company SET cname = 'GizmoWorks' WHERE country = 'USA';
+sqlite> UPDATE company SET cname = 'MobileWorks' WHERE cname = 'MovileWorks';
+sqlite> SELECT * FROM company;
+cname       country     no_employees  for_profit  ceo       
+----------  ----------  ------------  ----------  ----------
+GizmoWorks  USA         20000         y           NULL      
+Canon       Japan       50000         y           Brown     
+Charity     Canada      500           n           NULL      
+MobileWork  China       NULL          NULL        NULL      
+sqlite> select * from product left join company on company.cname = product.manufacturer;
+pname       price       category    manufacturer  cname       country     no_employees  for_profit  ceo       
+----------  ----------  ----------  ------------  ----------  ----------  ------------  ----------  ----------
+Gizmo       19.99       gadget      GizmoWorks    GizmoWorks  USA         20000         y           NULL      
+PowerGizmo  29.99       gadget      GizmoWorks    GizmoWorks  USA         20000         y           NULL      
+SingleTouc  149.99      photograph  Canon         Canon       Japan       50000         y           Brown     
+MultiTouch  199.99      photograph  MobileWorks   MobileWork  China       NULL          NULL        NULL      
+SuperGizmo  49.99       gadget      MobileWorks   MobileWork  China       NULL          NULL        NULL      
+Hoverboard  299.99      entertainm  NewCompany    NULL        NULL        NULL          NULL        NULL      
+sqlite> sqlite> select pname, country  from product left join company on company.cname = product.manufacturer;
+pname       country   
+----------  ----------
+Gizmo       USA       
+PowerGizmo  USA       
+SingleTouc  Japan     
+MultiTouch  China     
+SuperGizmo  China     
+Hoverboard  NULL      
+sqlite> UPDATE product SET pname = 'SingleTouch' WHERE pname = 'SingleTouc';
+sqlite> select pname, country  from product left join company on company.cname = product.manufacturer;
+pname       country   
+----------  ----------
+Gizmo       USA       
+PowerGizmo  USA       
+SingleTouc  Japan     
+MultiTouch  China     
+SuperGizmo  China     
+Hoverboard  NULL      
+
