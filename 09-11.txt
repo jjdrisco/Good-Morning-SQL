@@ -1,0 +1,359 @@
+Last login: Thu Sep  9 15:38:10 on ttys000
+johndriscoll@johns-air ~ % cd
+johndriscoll@johns-air ~ % ls
+Applications	DSC30		Downloads	Movies		Public
+Books		Desktop		LaTeX		Music		SQL
+DSC20		Documents	Library		Pictures	VS Code
+johndriscoll@johns-air ~ % cd SQL
+johndriscoll@johns-air SQL % ls
+sql_practice
+johndriscoll@johns-air SQL % cd sql_practice
+johndriscoll@johns-air sql_practice % ls
+08-30_creating_tables_companies_prices_queries_in_terminal_SQLite3.txt
+08-30_test
+README.md
+johndriscoll@johns-air sql_practice % pip install csvkit
+Collecting csvkit
+  Downloading csvkit-1.0.6-py2.py3-none-any.whl (42 kB)
+     |████████████████████████████████| 42 kB 632 kB/s 
+Collecting agate-dbf>=0.2.0
+  Downloading agate-dbf-0.2.2.tar.gz (2.9 kB)
+Collecting agate-excel>=0.2.2
+  Downloading agate_excel-0.2.5-py2.py3-none-any.whl (7.1 kB)
+Collecting agate-sql>=0.5.3
+  Downloading agate_sql-0.5.7-py2.py3-none-any.whl (7.1 kB)
+Requirement already satisfied: six>=1.6.1 in /Users/johndriscoll/Library/Python/3.9/lib/python/site-packages (from csvkit) (1.15.0)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.9/site-packages (from csvkit) (51.0.0)
+Collecting agate>=1.6.1
+  Downloading agate-1.6.3-py2.py3-none-any.whl (100 kB)
+     |████████████████████████████████| 100 kB 1.9 MB/s 
+Collecting parsedatetime!=2.5,!=2.6,>=2.1
+  Downloading parsedatetime-2.4.tar.gz (58 kB)
+     |████████████████████████████████| 58 kB 2.6 MB/s 
+Collecting python-slugify>=1.2.1
+  Downloading python_slugify-5.0.2-py2.py3-none-any.whl (6.7 kB)
+Collecting Babel>=2.0
+  Downloading Babel-2.9.1-py2.py3-none-any.whl (8.8 MB)
+     |████████████████████████████████| 8.8 MB 3.0 MB/s 
+Collecting leather>=0.3.2
+  Downloading leather-0.3.3-py3-none-any.whl (35 kB)
+Collecting isodate>=0.5.4
+  Downloading isodate-0.6.0-py2.py3-none-any.whl (45 kB)
+     |████████████████████████████████| 45 kB 2.6 MB/s 
+Collecting pytimeparse>=1.1.5
+  Downloading pytimeparse-1.1.8-py2.py3-none-any.whl (10.0 kB)
+Collecting dbfread>=2.0.5
+  Downloading dbfread-2.0.7-py2.py3-none-any.whl (20 kB)
+Collecting xlrd>=0.9.4
+  Downloading xlrd-2.0.1-py2.py3-none-any.whl (96 kB)
+     |████████████████████████████████| 96 kB 3.1 MB/s 
+Collecting olefile
+  Downloading olefile-0.46.zip (112 kB)
+     |████████████████████████████████| 112 kB 3.5 MB/s 
+Collecting openpyxl>=2.3.0
+  Downloading openpyxl-3.0.8-py2.py3-none-any.whl (244 kB)
+     |████████████████████████████████| 244 kB 3.1 MB/s 
+Collecting sqlalchemy>=1.0.8
+  Downloading SQLAlchemy-1.4.23-cp39-cp39-macosx_10_14_x86_64.whl (1.5 MB)
+     |████████████████████████████████| 1.5 MB 3.6 MB/s 
+Collecting pytz>=2015.7
+  Downloading pytz-2021.1-py2.py3-none-any.whl (510 kB)
+     |████████████████████████████████| 510 kB 3.4 MB/s 
+Collecting et-xmlfile
+  Downloading et_xmlfile-1.1.0-py3-none-any.whl (4.7 kB)
+Collecting future
+  Downloading future-0.18.2.tar.gz (829 kB)
+     |████████████████████████████████| 829 kB 3.8 MB/s 
+Collecting text-unidecode>=1.3
+  Downloading text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+     |████████████████████████████████| 78 kB 3.5 MB/s 
+Collecting greenlet!=0.4.17
+  Downloading greenlet-1.1.1-cp39-cp39-macosx_10_14_x86_64.whl (87 kB)
+     |████████████████████████████████| 87 kB 3.4 MB/s 
+Building wheels for collected packages: agate-dbf, parsedatetime, future, olefile
+  Building wheel for agate-dbf (setup.py) ... done
+  Created wheel for agate-dbf: filename=agate_dbf-0.2.2-py2.py3-none-any.whl size=3514 sha256=e6417f2b9a944c1a8874391ea8c6577d5d1c6642166c3930232d04be341723c6
+  Stored in directory: /Users/johndriscoll/Library/Caches/pip/wheels/67/31/dd/3f92bde7b118bb8be5a845314a597de1dc7dd8d2d52a8b4f9f
+  Building wheel for parsedatetime (setup.py) ... done
+  Created wheel for parsedatetime: filename=parsedatetime-2.4-py3-none-any.whl size=42746 sha256=73c0e2c64f67f459a2772011870ed674ce0a26309abd2e107d5d789dc89b24e7
+  Stored in directory: /Users/johndriscoll/Library/Caches/pip/wheels/92/80/ea/12d7c2c45f3ad765ee4cc505a22d5af2d1cc5defb0f4c0552b
+  Building wheel for future (setup.py) ... done
+  Created wheel for future: filename=future-0.18.2-py3-none-any.whl size=491058 sha256=c346c2db79c9ae708e35d19adef34bbd69eafedee6ca130796cd30ebf029ca51
+  Stored in directory: /Users/johndriscoll/Library/Caches/pip/wheels/2f/a0/d3/4030d9f80e6b3be787f19fc911b8e7aa462986a40ab1e4bb94
+  Building wheel for olefile (setup.py) ... done
+  Created wheel for olefile: filename=olefile-0.46-py2.py3-none-any.whl size=35416 sha256=2eaa3c372259643dc043266fa2194427735717e70ce208e293a5e179599c4c6a
+  Stored in directory: /Users/johndriscoll/Library/Caches/pip/wheels/64/b8/ba/ebba30390fbd997074f35e42a842ce3fd933213cac8753414e
+Successfully built agate-dbf parsedatetime future olefile
+Installing collected packages: text-unidecode, pytz, future, pytimeparse, python-slugify, parsedatetime, leather, isodate, greenlet, et-xmlfile, Babel, xlrd, sqlalchemy, openpyxl, olefile, dbfread, agate, agate-sql, agate-excel, agate-dbf, csvkit
+Successfully installed Babel-2.9.1 agate-1.6.3 agate-dbf-0.2.2 agate-excel-0.2.5 agate-sql-0.5.7 csvkit-1.0.6 dbfread-2.0.7 et-xmlfile-1.1.0 future-0.18.2 greenlet-1.1.1 isodate-0.6.0 leather-0.3.3 olefile-0.46 openpyxl-3.0.8 parsedatetime-2.4 python-slugify-5.0.2 pytimeparse-1.1.8 pytz-2021.1 sqlalchemy-1.4.23 text-unidecode-1.3 xlrd-2.0.1
+WARNING: You are using pip version 21.0.1; however, version 21.2.4 is available.
+You should consider upgrading via the '/usr/local/opt/python@3.9/bin/python3.9 -m pip install --upgrade pip' command.
+johndriscoll@johns-air sql_practice % cd ~
+johndriscoll@johns-air ~ % mv ~/Downloads/addresses.csv ~/SQL/sql_practice
+johndriscoll@johns-air ~ % -
+johndriscoll@johns-air ~ % cd -
+~/SQL/sql_practice
+johndriscoll@johns-air sql_practice % ls
+08-30_creating_tables_companies_prices_queries_in_terminal_SQLite3.txt
+08-30_test
+README.md
+addresses.csv
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT * FROM addresses" addresses.csv | csvlook
+ValueError: Row 2 has 7 values, but Table only has 5 columns.
+/usr/local/lib/python3.9/site-packages/agate/table/from_csv.py:72: RuntimeWarning: Error sniffing CSV dialect: Could not determine delimiter
+StopIteration: 
+johndriscoll@johns-air sql_practice % open addresses.csv
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT * FROM addresses" addresses.csv | csvlook
+ValueError: Row 2 has 7 values, but Table only has 5 columns.
+/usr/local/lib/python3.9/site-packages/agate/table/from_csv.py:72: RuntimeWarning: Error sniffing CSV dialect: Could not determine delimiter
+StopIteration: 
+johndriscoll@johns-air sql_practice % rm addresses.csv
+johndriscoll@johns-air sql_practice % cd ~
+johndriscoll@johns-air ~ % mv ~/Downloads/taxables.csv ~/SQL/sql_practice/
+johndriscoll@johns-air ~ % ls
+Applications	DSC30		Downloads	Movies		Public
+Books		Desktop		LaTeX		Music		SQL
+DSC20		Documents	Library		Pictures	VS Code
+johndriscoll@johns-air ~ % cd -
+~/SQL/sql_practice
+johndriscoll@johns-air sql_practice % ls
+08-30_creating_tables_companies_prices_queries_in_terminal_SQLite3.txt
+08-30_test
+README.md
+taxables.csv
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT * FROM taxables" taxables.csv | csvlook
+ValueError: Row 5 has 6 values, but Table only has 5 columns.
+/usr/local/lib/python3.9/site-packages/agate/table/from_csv.py:72: RuntimeWarning: Error sniffing CSV dialect: Could not determine delimiter
+StopIteration: 
+johndriscoll@johns-air sql_practice % open taxables.csv
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT * FROM taxables" taxables.csv | csvlook
+| Index |  "Item"                            |  "Cost" |  "Tax" |  "Total" |
+| ----- | ---------------------------------- | ------- | ------ | -------- |
+|     1 |  "Fruit of the Loom Girl's Socks"  |    7.97 |   0.60 |     8.57 |
+|     2 |  "Rawlings Little League Baseball" |    2.97 |   0.22 |     3.19 |
+|     3 |  "Secret Antiperspirant"           |    1.29 |   0.10 |     1.39 |
+|     4 |  "Deadpool DVD"                    |   14.96 |   1.12 |    16.08 |
+|     5 |  "Maxwell House Coffee 28 oz"      |    7.28 |   0.55 |     7.83 |
+|     6 |  "Banana Boat Sunscreen 8 oz"      |    6.68 |   0.50 |     7.18 |
+|     7 |  "Wrench Set 18 pieces"            |   10.00 |   0.75 |    10.75 |
+|     8 |  "M and M 42 oz"                   |    8.98 |   0.67 |     9.65 |
+|     9 |  "Bertoli Alfredo Sauce"           |    2.12 |   0.16 |     2.28 |
+|    10 |  "Large Paperclips 10 boxes"       |    6.19 |   0.46 |     6.65 |
+|       |                                    |         |        |          |
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT MAX(Cost) FROM taxables WHERE Tax < 0.5
+dquote> " taxables.csv
+OperationalError: (sqlite3.OperationalError) no such column: Cost
+[SQL: SELECT MAX(Cost) FROM taxables WHERE Tax < 0.5
+]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT MAX(Cost) FROM taxables WHERE Tax < 0.5
+" taxables.csv
+OperationalError: (sqlite3.OperationalError) no such column: Cost
+[SQL: SELECT MAX(Cost) FROM taxables WHERE Tax < 0.5
+]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT Cost FROM taxables" taxables.csv
+OperationalError: (sqlite3.OperationalError) no such column: Cost
+[SQL: SELECT Cost FROM taxables]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT * FROM  taxables" taxables.csv
+Index, Item, Cost, Tax, Total
+1.0," ""Fruit of the Loom Girl's Socks""",7.97,0.6,8.57
+2.0," ""Rawlings Little League Baseball""",2.97,0.22,3.19
+3.0," ""Secret Antiperspirant""",1.29,0.1,1.39
+4.0," ""Deadpool DVD""",14.96,1.12,16.08
+5.0," ""Maxwell House Coffee 28 oz""",7.28,0.55,7.83
+6.0," ""Banana Boat Sunscreen 8 oz""",6.68,0.5,7.18
+7.0," ""Wrench Set 18 pieces""",10.0,0.75,10.75
+8.0," ""M and M 42 oz""",8.98,0.67,9.65
+9.0," ""Bertoli Alfredo Sauce""",2.12,0.16,2.28
+10.0," ""Large Paperclips 10 boxes""",6.19,0.46,6.65
+,,,,
+johndriscoll@johns-air sql_practice % csvsql --query "DESCRIBE taxables" taxables.csv
+OperationalError: (sqlite3.OperationalError) near "DESCRIBE": syntax error
+[SQL: DESCRIBE taxables]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+johndriscoll@johns-air sql_practice % ls
+08-30_creating_tables_companies_prices_queries_in_terminal_SQLite3.txt
+08-30_test
+README.md
+taxables.csv
+johndriscoll@johns-air sql_practice % sqlite3
+SQLite version 3.32.3 2020-06-18 14:16:19
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> exit
+   ...> ()
+   ...> 
+   ...> ^C^C%                                                                   johndriscoll@johns-air sql_practice % ls
+08-30_creating_tables_companies_prices_queries_in_terminal_SQLite3.txt
+08-30_test
+README.md
+taxables.csv
+johndriscoll@johns-air sql_practice % sqlite3 09-11
+SQLite version 3.32.3 2020-06-18 14:16:19
+Enter ".help" for usage hints.
+sqlite> .mode csv
+sqlite> -- https://www.sqlitetutorial.net/sqlite-import-csv/
+sqlite> .import ~/SQL/sql_practice/taxables.csv taxables
+Error: cannot open "~/SQL/sql_practice/taxables.csv"
+sqlite> .import c:/SQL/sql_practice/taxables.csv taxables
+Error: cannot open "c:/SQL/sql_practice/taxables.csv"
+sqlite> .import taxables.csv taxables
+sqlite> .schema taxables
+CREATE TABLE taxables(
+  "Index" TEXT,
+  " Item" TEXT,
+  " Cost" TEXT,
+  " Tax" TEXT,
+  " Total" TEXT
+);
+sqlite> DROP TABLE IF EXISTS cities;
+sqlite> DROP TABLE IF EXISTS taxables;
+sqlite> CREATE TABLE taxables(
+   ...> Index INT NOT NULL,
+   ...> Item TEXT NOT NULL,
+   ...> COST DECIMAL(10,2) NOT NULL,
+   ...> TAX DECIMAL(10,2) NOT NULL,
+   ...> TOTAL DECIMAL(10,2) NOT NULL,
+   ...> ;
+Error: near "Index": syntax error
+sqlite> CREATE TABLE taxables(
+   ...> "Index" INT NOT NULL,
+   ...> "Item" TEXT NOT NULL,
+   ...> "Cost" DECIMAL(10,2) NOT NULL,
+   ...> "Tax" DECIMAL(10,2) NOT NULL,
+   ...> "Total" DECIMAL(10,2) NOT NULL,
+   ...> ;
+Error: near ";": syntax error
+sqlite> CREATE TABLE taxables(
+   ...> "Index" INT NOT NULL,
+   ...> "Item" TEXT NOT NULL,
+   ...> "Cost" DECIMAL(10,2) NOT NULL,
+   ...> "Tax" DECIMAL(10,2) NOT NULL,
+   ...> "Total" DECIMAL(10,2) NOT NULL
+   ...> );
+sqlite> DISPLAY taxables
+   ...> ;
+Error: near "DISPLAY": syntax error
+sqlite> .schema taxables
+CREATE TABLE taxables(
+"Index" INT NOT NULL,
+"Item" TEXT NOT NULL,
+"Cost" DECIMAL(10,2) NOT NULL,
+"Tax" DECIMAL(10,2) NOT NULL,
+"Total" DECIMAL(10,2) NOT NULL
+);
+sqlite> .mode csv
+sqlite> .import taxables.csv taxables
+sqlite> .schema taxables
+CREATE TABLE taxables(
+"Index" INT NOT NULL,
+"Item" TEXT NOT NULL,
+"Cost" DECIMAL(10,2) NOT NULL,
+"Tax" DECIMAL(10,2) NOT NULL,
+"Total" DECIMAL(10,2) NOT NULL
+);
+sqlite> SELECT * FROM taxables
+   ...> ;
+1," ""Fruit of the Loom Girl's Socks""",7.97,0.6,8.57
+2," ""Rawlings Little League Baseball""",2.97,0.22,3.19
+3," ""Secret Antiperspirant""",1.29,0.1,1.39
+4," ""Deadpool DVD""",14.96,1.12,16.08
+5," ""Maxwell House Coffee 28 oz""",7.28,0.55,7.83
+6," ""Banana Boat Sunscreen 8 oz""",6.68,0.5,7.18
+7," ""Wrench Set 18 pieces""",10,0.75,10.75
+8," ""M and M 42 oz""",8.98,0.67,9.65
+9," ""Bertoli Alfredo Sauce""",2.12,0.16,2.28
+10," ""Large Paperclips 10 boxes""",6.19,0.46,6.65
+sqlite> .mode column
+sqlite> SELECT * FROM taxables;
+1            "Fruit of the Loom Girl's Socks"  7.97        0.6         8.57      
+2            "Rawlings Little League Baseball  2.97        0.22        3.19      
+3            "Secret Antiperspirant"           1.29        0.1         1.39      
+4            "Deadpool DVD"                    14.96       1.12        16.08     
+5            "Maxwell House Coffee 28 oz"      7.28        0.55        7.83      
+6            "Banana Boat Sunscreen 8 oz"      6.68        0.5         7.18      
+7            "Wrench Set 18 pieces"            10          0.75        10.75     
+8            "M and M 42 oz"                   8.98        0.67        9.65      
+9            "Bertoli Alfredo Sauce"           2.12        0.16        2.28      
+10           "Large Paperclips 10 boxes"       6.19        0.46        6.65      
+sqlite> ^C^C%                                                                   johndriscoll@johns-air sql_practice % csvsql --query "SELECT * FROM  taxables" taxables.csv     
+ 1," ""Fruit of the Loom Girl's Socks""",  7.97, 0.60,  8.57
+2.0," ""Rawlings Little League Baseball""",2.97,0.22,3.19
+3.0," ""Secret Antiperspirant""",1.29,0.1,1.39
+4.0," ""Deadpool DVD""",14.96,1.12,16.08
+5.0," ""Maxwell House Coffee 28 oz""",7.28,0.55,7.83
+6.0," ""Banana Boat Sunscreen 8 oz""",6.68,0.5,7.18
+7.0," ""Wrench Set 18 pieces""",10.0,0.75,10.75
+8.0," ""M and M 42 oz""",8.98,0.67,9.65
+9.0," ""Bertoli Alfredo Sauce""",2.12,0.16,2.28
+10.0," ""Large Paperclips 10 boxes""",6.19,0.46,6.65
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT * FROM  taxables" taxables.csv
+Index, Item, Cost, Tax, Total
+1.0," ""Fruit of the Loom Girl's Socks""",7.97,0.6,8.57
+2.0," ""Rawlings Little League Baseball""",2.97,0.22,3.19
+3.0," ""Secret Antiperspirant""",1.29,0.1,1.39
+4.0," ""Deadpool DVD""",14.96,1.12,16.08
+5.0," ""Maxwell House Coffee 28 oz""",7.28,0.55,7.83
+6.0," ""Banana Boat Sunscreen 8 oz""",6.68,0.5,7.18
+7.0," ""Wrench Set 18 pieces""",10.0,0.75,10.75
+8.0," ""M and M 42 oz""",8.98,0.67,9.65
+9.0," ""Bertoli Alfredo Sauce""",2.12,0.16,2.28
+10.0," ""Large Paperclips 10 boxes""",6.19,0.46,6.65
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT Cost  FROM  taxables" taxables.csv
+OperationalError: (sqlite3.OperationalError) no such column: Cost
+[SQL: SELECT Cost  FROM  taxables]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT  Cost FROM  taxables" taxables.csv
+OperationalError: (sqlite3.OperationalError) no such column: Cost
+[SQL: SELECT  Cost FROM  taxables]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT 'cost' FROM  taxables" taxables.csv 
+'cost'
+cost
+cost
+cost
+cost
+cost
+cost
+cost
+cost
+cost
+cost
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT * FROM  taxables" taxables.csv | csvlook
+| Index |  Item                              |  Cost |  Tax |  Total |
+| ----- | ---------------------------------- | ----- | ---- | ------ |
+|     1 |  "Fruit of the Loom Girl's Socks"  |  7.97 | 0.60 |   8.57 |
+|     2 |  "Rawlings Little League Baseball" |  2.97 | 0.22 |   3.19 |
+|     3 |  "Secret Antiperspirant"           |  1.29 | 0.10 |   1.39 |
+|     4 |  "Deadpool DVD"                    | 14.96 | 1.12 |  16.08 |
+|     5 |  "Maxwell House Coffee 28 oz"      |  7.28 | 0.55 |   7.83 |
+|     6 |  "Banana Boat Sunscreen 8 oz"      |  6.68 | 0.50 |   7.18 |
+|     7 |  "Wrench Set 18 pieces"            | 10.00 | 0.75 |  10.75 |
+|     8 |  "M and M 42 oz"                   |  8.98 | 0.67 |   9.65 |
+|     9 |  "Bertoli Alfredo Sauce"           |  2.12 | 0.16 |   2.28 |
+|    10 |  "Large Paperclips 10 boxes"       |  6.19 | 0.46 |   6.65 |
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT Item FROM  taxables" taxables.csv | csvlook
+OperationalError: (sqlite3.OperationalError) no such column: Item
+[SQL: SELECT Item FROM  taxables]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+/usr/local/lib/python3.9/site-packages/agate/table/from_csv.py:72: RuntimeWarning: Error sniffing CSV dialect: Could not determine delimiter
+StopIteration: 
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT Index FROM  taxables" taxables.csv | csvlook
+OperationalError: (sqlite3.OperationalError) near "Index": syntax error
+[SQL: SELECT Index FROM  taxables]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+/usr/local/lib/python3.9/site-packages/agate/table/from_csv.py:72: RuntimeWarning: Error sniffing CSV dialect: Could not determine delimiter
+StopIteration: 
+johndriscoll@johns-air sql_practice % csvsql --query "SELECT Index FROM taxables" taxables.csv | csvlook 
+OperationalError: (sqlite3.OperationalError) near "Index": syntax error
+[SQL: SELECT Index FROM taxables]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+/usr/local/lib/python3.9/site-packages/agate/table/from_csv.py:72: RuntimeWarning: Error sniffing CSV dialect: Could not determine delimiter
+StopIteration: 
+johndriscoll@johns-air sql_practice % -- csvsql is a flop
+zsh: command not found: --
+johndriscoll@johns-air sql_practice % 
+
