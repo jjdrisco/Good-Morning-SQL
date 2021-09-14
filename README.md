@@ -10,10 +10,11 @@ This choose your own adventure is designed as a fun way to practice your SQL ski
 * **[A SQL Reference](https://github.com/NUKnightLab/sql-mysteries/blob/master/reference.pdf)**: This is a crash course on SQL concepts and commands written by @Joonpark13 .
 * **A SQLite environment**: For the purposes of the story-outline, we'll run SQLite3 directly in terminal.
 
-# Author
+# People
+## Author
 [John Driscoll](https://www.linkedin.com/in/john-driscoll-/)
 
-# Inspiration
+## Inspiration
 inspired by https://github.com/NUKnightLab/sql-mysteries
 
 # Story
