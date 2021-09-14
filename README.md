@@ -17,5 +17,9 @@ This choose your own adventure is designed as a fun way to practice your SQL ski
 **Inspiration:**
 https://github.com/NUKnightLab/sql-mysteries
 
+# Schema
+
+![Schema of the tables that will be queried](schema.png)
+
 # Story
 
