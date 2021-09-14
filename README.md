@@ -11,10 +11,10 @@ This choose your own adventure is designed as a fun way to practice your SQL ski
 * **A SQLite environment**: For the purposes of the story-outline, we'll run SQLite3 directly in terminal.
 
 # People
-**Author**
+**Author:**
 [John Driscoll](https://www.linkedin.com/in/john-driscoll-/)
 
-**Inspiration**
+**Inspiration:**
 inspired by https://github.com/NUKnightLab/sql-mysteries
 
 # Story
