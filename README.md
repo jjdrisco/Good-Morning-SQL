@@ -1,5 +1,3 @@
-# SQL Choose Your Own Adventure
-
 ![Picture of Coffee Shop and Title](CYOA-header.png)
 
 
