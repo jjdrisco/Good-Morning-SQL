@@ -26,7 +26,7 @@ https://github.com/NUKnightLab/sql-mysteries
 
 ## Chapter 1
 
-*beep beep* *beep beep* That's your alarm clock waking you up for another Monday. You roll out of bed, drink some water, and get ready for the day. But, there's something missing ... a coffee from the place down the street.
+*beep beep* *beep beep* That's your alarm clock waking you up for another Monday in Morgantown, West Virginia. You roll out of bed, drink some water, and get ready for the day. But, there's something missing ... a coffee from the Dunkin' Donuts down the street.
 
 You walk out the door with a smile on your face and a stride in your step. After traveling all the way down the street to the coffeeshop, you open the door. *the ambiance of coffeeshop chatter fills the air*
 
@@ -44,6 +44,14 @@ To ask for someone's name in line, **join the "people-in-line" table with the "n
 
 Once you have their name, strike up a conversation!
 
-**Query the conversation from conversation with their name, and with a line-id less than 2**
+**Query the conversation from conversation with their name, and with a line-id less than 2** *hint 3*
 
 ## Chapter 2
+
+You've finally reached the front of the line.
+
+## Bonus
+
+If you recieved a phone number throughout your adventure, call them now!
+
+**Query phone for where phone-number is equal to their number** *hint *
