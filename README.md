@@ -1,6 +1,8 @@
 ![Picture of Coffee Shop and Title](CYOA-header.png)
 
-You've just woken up and are getting ready to start your day as an Data Analyst. What better way to start the day than heading to your local coffee shop to grab a cup of joe. This choose your own adventure is designed as a fun way to practice your SQL skills.
+You've just woken up and are getting ready to start your day as an Data Analyst. What better way to start the day than heading to your local coffee shop to grab a cup of joe? 
+
+This choose your own adventure is designed as a fun way to practice your SQL skills.
 
 # What you need to play:
 * **file name 1** This SQLite database file has all of the data you'll need for the story
