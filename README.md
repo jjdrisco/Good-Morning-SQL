@@ -5,9 +5,9 @@ You've just woken up and are getting ready to start your day as an Data Analyst.
 This choose your own adventure is designed as a fun way to practice your SQL skills.
 
 # What you need to play:
-* **file name 1.db** This SQLite database file has all of the data you'll need for the story
-* **The Story Outline** Further down in this readme, Read through this while doing your queries! (this is the story part :) )
-* **Hints** For if you get stuck with queries throughout the story
+* **file name 1.db:** This SQLite database file has all of the data you'll need for the story
+* **The Story Outline:** Further down in this readme, Read through this while doing your queries! (this is the story part :) )
+* **Hints:** For if you get stuck with queries throughout the story
 * **[A SQL Reference](https://github.com/NUKnightLab/sql-mysteries/blob/master/reference.pdf)**: This is a crash course on SQL concepts and commands written by @Joonpark13 .
 * **A SQLite environment**: For the purposes of the story-outline, we'll run SQLite3 directly in terminal.
 
