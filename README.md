@@ -15,7 +15,7 @@ This choose your own adventure is designed as a fun way to practice your SQL ski
 [John Driscoll](https://www.linkedin.com/in/john-driscoll-/)
 
 **Inspiration:**
-inspired by https://github.com/NUKnightLab/sql-mysteries
+https://github.com/NUKnightLab/sql-mysteries
 
 # Story
 
