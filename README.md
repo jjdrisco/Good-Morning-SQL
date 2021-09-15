@@ -5,7 +5,7 @@ You've just woken up and are getting ready to start your day as an Data Analyst.
 This choose your own adventure is designed as a fun way to practice your SQL skills.
 
 # What you need to play:
-* **file name 1.db:** This SQLite database file has all of the data you'll need for the story
+* **adventure.db:** This SQLite database file has all of the data you'll need for the story
 * **The Story Outline:** Further down in this readme, Read through this while doing your queries! (this is the story part :) )
 * **Hints:** For if you get stuck with queries throughout the story
 * **[A SQL Reference](https://github.com/NUKnightLab/sql-mysteries/blob/master/reference.pdf)**: This is a crash course on SQL concepts and commands written by @Joonpark13 .
@@ -20,7 +20,7 @@ https://github.com/NUKnightLab/sql-mysteries
 
 # Schema
 
-![Schema of the tables that will be queried](schema.png)
+![Schema of the tables that will be queried](adventureSchema.png)
 
 # Story
 
@@ -34,7 +34,10 @@ To your dismay, there's a line of 8 people before you waiting to order with the 
 
 To see the friendly levels of the people in line:
 
-In a terminal, navigate to a folder / repository of your choice that contains the **file name 1.db**, and type SQLite3 file name 1.db to be able to access the database.
+In a terminal, navigate to a folder / repository of your choice that contains the **file name 1.db**, and type **SQLite3 adventure.db** to be able to access the database.
+
+
+
 
 Then, **query and display the entire people-in-line table**. *hint #1*
 
