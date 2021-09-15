@@ -39,7 +39,7 @@ To ask for someone's name in line, **join the "peopleInLine" table with the "nam
 
 Once you have their name, strike up a conversation!
 
-**Query the conversation from conversation with their name, and with a lineId less than 2** *hint 3*
+**Query the conversation from conversation with their name, and with a lineId less than 2** *hint #3*
 
 ## Chapter 2
 
