@@ -11,13 +11,6 @@ This choose your own adventure is designed as a fun way to practice your SQL ski
 * **[A SQL Reference](https://github.com/NUKnightLab/sql-mysteries/blob/master/reference.pdf)**: This is a crash course on SQL concepts and commands written by @Joonpark13 .
 * **A SQLite environment**: For the purposes of the story-outline, we'll run SQLite3 directly in terminal.
 
-# People
-**Author:**
-[John Driscoll](https://www.linkedin.com/in/john-driscoll-/)
-
-**Inspiration:**
-https://github.com/NUKnightLab/sql-mysteries
-
 # Schema
 
 ![Schema of the tables that will be queried](adventureSchema.png)
@@ -58,3 +51,11 @@ You've finally reached the front of the line.
 If you recieved a phone number throughout your adventure, call them now!
 
 **Query phone for where phone-number is equal to their number** *hint *
+
+
+# People
+**Author:**
+[John Driscoll](https://www.linkedin.com/in/john-driscoll-/)
+
+**Inspiration:**
+https://github.com/NUKnightLab/sql-mysteries
