@@ -1,6 +1,6 @@
 ![Picture of Coffee Shop and Title](Good-Morning-SQL.png)
 
-You've just woken up and are getting ready to start your day as an Data Analyst. What better way to start the day than heading to your local coffee shop to grab a cup of joe? 
+You've just woken up and are getting ready to start your day as a Data Analyst. What better way to start the day than heading to your local coffee shop to grab a cup of joe? 
 
 This choose your own adventure is designed as a fun way to practice your SQL skills.
 
