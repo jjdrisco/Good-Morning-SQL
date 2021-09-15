@@ -1,0 +1,106 @@
+johndriscoll@Johns-MacBook-Air Good-Morning-SQL % SQLite3 adventure
+SQLite version 3.32.3 2020-06-18 14:16:19
+Enter ".help" for usage hints.
+sqlite> .header on;
+ERROR: Not a boolean value: "on;". Assuming "no".
+sqlite> .header on
+sqlite> DROP TABLE IF EXISTS peopleInLine;
+sqlite> CREATE TABLE peopleInLine(
+   ...> orderInLine INT NOT NULL,
+   ...> friendlyOrNot TEXT NOT NULL,
+   ...> personId INT NOT NULL);
+sqlite> DROP TABLE IF EXISTS names;
+sqlite> CREATE TABLE names(
+   ...> id INT NOT NULL,
+   ...> name TEXT NOT NULL);
+sqlite> DROP TABLE IF EXISTS conversation;
+sqlite> CREATE TABLE conversation(
+   ...> name TEXT NOT NULL,
+   ...> lineId INT NOT NULL,
+   ...> conversation TEXT);
+sqlite> DROP TABLE IF EXISTS phoneCalls;
+sqlite> CREATE TABLE phoneCalls(
+   ...> number INT NOT NULL,
+   ...> name TEXT NOT NULL,
+   ...> conversation TEXT NOT NULL);
+sqlite> .mode csv
+sqlite> .import peopleInLine.csv peopleInLine
+sqlite> .mode column
+sqlite> SELECT * FROM peopleInLine;
+orderInLine  friendlyOrNot  personId  
+-----------  -------------  ----------
+0                           0         
+1            Yes            9981      
+2            No             9982      
+3            Yes            9983      
+4            Yes            9984      
+5            No             9985      
+6            No             9986      
+7            No             9987      
+8            Yes            9988      
+sqlite> .nullvalue NULL
+sqlite> SELECT * FROM peopleInLine;
+orderInLine  friendlyOrNot  personId  
+-----------  -------------  ----------
+0                           0         
+1            Yes            9981      
+2            No             9982      
+3            Yes            9983      
+4            Yes            9984      
+5            No             9985      
+6            No             9986      
+7            No             9987      
+8            Yes            9988      
+sqlite> .mode csv
+sqlite> .import names.csv names
+sqlite> .mode column
+sqlite> SELECT * FROM names;
+id          name      
+----------  ----------
+0           Annie     
+9981        Geraldine 
+9982        Jeff      
+9983        Steve     
+9984        Patricia  
+9985        Tommy     
+9986        Gracie    
+9987        Veronica  
+9988        Dillon    
+9989        Stacy     
+sqlite> .mode csv
+sqlite> .import conversation.csv conversation
+sqlite> .mode column
+sqlite> SELECT * FROM conversation;
+name        lineId      conversation                                                                                                   
+----------  ----------  ---------------------------------------------------------------------------------------------------------------
+Annie       0           *A wild annie appears!* Annie runs up to you standing in line. It's her birthday, and she's holding a cake pop!
+Annie       1           You wish her a happy birthday, and she thanks you. Then she mentions that she's gluten free and offers you the 
+Annie       2           You get 1 cake pop!                                                                                            
+Geraldine   0           "Hello Dear!" The first person in line is Geriatric Geraldine.You ask what she's about to order, and she says a
+Geraldine   1           Because you're feeling nice, you offer to pay for her coffee, and she gives you a wershers caramel, and her num
+Jeff        0           "What do you want >:((" Jeff asks. "Just wanted to say hello" you respond, "Are you okay?". "No", Jeff responds
+Jeff        1           "I have a presentation later, and I'm really nervous". You respond, "I'm sure you'll do great. Good luck!"     
+Steve       0           "Hey there Buckaroo!" "How's your fine morning?", Steve Asks. You respond, "going great!, the sun is shining, t
+Steve       1           *geraldine walks by and spills her coffee on you* You cry out in shock, thank goodness the coffee wasn't too ho
+Patricia    0           Patricia seems to be dozing off as you wave at her in line. She jerks awake and says, "hi! sorry, I didn't slee
+Patricia    1           "What were you up to last night?" you ask. "Wouldn't you like to know", Patricia jokes. "Here's my number, call
+Tommy       0           Tommy screams at his sister Gracie, and proceeds to run around the dunkin'.                                    
+Tommy       1           Tommy's mom, Veronica apologizes for his misbehavior, and offers to pay for your coffee. You politely decline, 
+Gracie      0           Gracie says hi, then cartwheels away. Her brother Tommy chases her around the dunkin' donuts.                  
+Gracie      1           Veronica, Gracie's mom laughs, and then orders them both kids' hot chocolates.                                 
+Veronica    0           Veronica laughs at her two kids, Gracie and Tommy, who are currently running around the coffeeshop.            
+Veronica    1           You ask her "they're hyper this morning". She responds, "yep, they're always like this. I'm enjoying it while i
+Dillon      0           Dillon ignores you.                                                                                            
+Stacy       0                                                                                                                          
+Stacy       1           NULL                                                                                                           
+sqlite> .mode csv
+sqlite> .import phoneCalls.csv phoneCalls
+sqlite> .mode column
+sqlite> SELECT * FROM phoneCalls;
+number      name        conversation                                      
+----------  ----------  --------------------------------------------------
+3042847024  Geraldine   The phone line rings busy. It must be off the hook
+3042854890  Patricia    She gave you the number of a rejection hotline :((
+sqlite> .quit
+johndriscoll@Johns-MacBook-Air Good-Morning-SQL % 
+

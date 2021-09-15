@@ -1,0 +1,20 @@
+Annie,0,"*A wild annie appears!* Annie runs up to you standing in line. It's her birthday, and she's holding a cake pop!"
+Annie,1,"You wish her a happy birthday, and she thanks you. Then she mentions that she's gluten free and offers you the cake pop! *continue to annie line-id 2*"
+Annie,2,You get 1 cake pop!
+Geraldine,0,"""Hello Dear!"" The first person in line is Geriatric Geraldine.You ask what she's about to order, and she says a black coffee."
+Geraldine,1,"Because you're feeling nice, you offer to pay for her coffee, and she gives you a wershers caramel, and her number to call if you want to play bingo: 304-284-7024"
+Jeff,0,"""What do you want >:(("" Jeff asks. ""Just wanted to say hello"" you respond, ""Are you okay?"". ""No"", Jeff responds, ""I'm having a difficult monday"""
+Jeff,1,"""I have a presentation later, and I'm really nervous"". You respond, ""I'm sure you'll do great. Good luck!"""
+Steve,0,"""Hey there Buckaroo!"" ""How's your fine morning?"", Steve Asks. You respond, ""going great!, the sun is shining, the air is warm, nothing's gonna h-"
+Steve,1,"*geraldine walks by and spills her coffee on you* You cry out in shock, thank goodness the coffee wasn't too hot. ""Sorry"" steve says. Then he leaves, whatever."
+Patricia,0,"Patricia seems to be dozing off as you wave at her in line. She jerks awake and says, ""hi! sorry, I didn't sleep much last night."". ""it's okay"" you, respond."
+Patricia,1,"""What were you up to last night?"" you ask. ""Wouldn't you like to know"", Patricia jokes. ""Here's my number, call me"": 304-285-4890 . She leaves in a rush."
+Tommy,0,"Tommy screams at his sister Gracie, and proceeds to run around the dunkin'."
+Tommy,1,"Tommy's mom, Veronica apologizes for his misbehavior, and offers to pay for your coffee. You politely decline, she has enough on her hands."
+Gracie,0,"Gracie says hi, then cartwheels away. Her brother Tommy chases her around the dunkin' donuts."
+Gracie,1,"Veronica, Gracie's mom laughs, and then orders them both kids' hot chocolates."
+Veronica,0,"Veronica laughs at her two kids, Gracie and Tommy, who are currently running around the coffeeshop."
+Veronica,1,"You ask her ""they're hyper this morning"". She responds, ""yep, they're always like this. I'm enjoying it while it lasts"""
+Dillon,0,Dillon ignores you.
+Stacy,0,
+Stacy,1,

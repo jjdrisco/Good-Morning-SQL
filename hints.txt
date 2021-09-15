@@ -1,0 +1,40 @@
+johndriscoll@Johns-MacBook-Air Good-Morning-SQL % SQLite3 adventure
+SQLite version 3.32.3 2020-06-18 14:16:19
+Enter ".help" for usage hints.
+sqlite> .mode column
+sqlite> .nullvalue NULL
+sqlite> .header on
+sqlite> --
+sqlite> --
+sqlite> -- hint 1
+sqlite> --
+sqlite> SELECT * FROM peopleInLine;
+orderInLine  friendlyOrNot  personId  
+-----------  -------------  ----------
+0                           0         
+1            Yes            9981      
+2            No             9982      
+3            Yes            9983      
+4            Yes            9984      
+5            No             9985      
+6            No             9986      
+7            No             9987      
+8            Yes            9988      
+sqlite> --
+sqlite> --
+sqlite> -- hint 2
+sqlite> --
+sqlite> SELECT name FROM peopleInLine JOIN names ON peopleInLine.personId = names.id WHERE orderInLine = 3;
+name      
+----------
+Steve     
+sqlite> -- 
+sqlite> --
+sqlite> -- hint 3
+sqlite> --
+sqlite> SELECT name, conversation FROM conversation WHERE name = 'Steve' AND lineId < 2;
+name        conversation                                                                                                                                     
+----------  --------------------------------------------------------------------------------------------------------------------                             
+Steve       "Hey there Buckaroo!" "How's your fine morning?", Steve Asks. You respond, "going great!, the sun is shining, the air is warm, nothing's gonna h-
+Steve       *geraldine walks by and spills her coffee on you* You cry out in shock, thank goodness the coffee wasn't too hot. "Sorry" steve says. Then he lea
+sqlite> .quit
