@@ -27,20 +27,19 @@ To your dismay, there's a line of 8 people before you waiting to order with the 
 
 To see the friendly levels of the people in line:
 
-In a terminal, navigate to a folder / repository of your choice that contains the **file name 1.db**, and type **SQLite3 adventure.db** to be able to access the database.
+In a terminal, navigate to a folder / repository of your choice that contains the **adventure.db**, and type **SQLite3 adventure.db** to be able to access the database.
 
+Then type, **.mode column** and **.nullvalue NULL** and **.header on** and you're ready to go.
 
-
-
-Then, **query and display the entire people-in-line table**. *hint #1*
+Now, **query and display the entire peopleInLine table**. *hint #1*
 
 Wow! Those look like some interesting people, but you don't know any of their names, only their place in line and person-id.
 
-To ask for someone's name in line, **join the "people-in-line" table with the "names" table and query the name of the person you want to talk to where their order in line is equal to who you want to talk to** *hint #2*. Or, if you don't want to talk to anyone, query using the 0th place in line.
+To ask for someone's name in line, **join the "peopleInLine" table with the "names" table and query the name of the person you want to talk to where their order in line is equal to who you want to talk to** *hint #2*. Or, if you don't want to talk to anyone, query using the 0th place in line.
 
 Once you have their name, strike up a conversation!
 
-**Query the conversation from conversation with their name, and with a line-id less than 2** *hint 3*
+**Query the conversation from conversation with their name, and with a lineId less than 2** *hint 3*
 
 ## Chapter 2
 
@@ -50,7 +49,7 @@ You've finally reached the front of the line.
 
 If you recieved a phone number throughout your adventure, call them now!
 
-**Query phone for where phone-number is equal to their number** *hint *
+**Query phone for where phoneNumber is equal to their number** *hint *
 
 
 # People
