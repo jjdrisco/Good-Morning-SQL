@@ -41,9 +41,6 @@ Once you have their name, strike up a conversation!
 
 **Query the conversation from conversation with their name, and with a lineId less than 2** *hint #3*
 
-## Chapter 2
-
-You've finally reached the front of the line.
 
 ## Bonus
 
